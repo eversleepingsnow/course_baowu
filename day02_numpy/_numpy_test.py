@@ -115,24 +115,4 @@ for x in np.nditer(a, order='C', op_flags=['readwrite']):
     x[...] = 2 * x
     print(x, end=",")
 print('___________*****_________________')
-"""
-Numpy 数组操作
-Numpy 中包含了一些函数用于处理数组，大概可分为以下几类：
-    修改数组形状 numpy.reshape 
-    numpy.ndarray.flat  返回数组元素迭代器
-    numpy.ndarray.flatten   返回一份数组拷贝
-    numpy.ravel   展平的数组元素
-    翻转数组   
-    修改数组维度  numpy.transpose(arr, axes)
-    连接数组
-    分割数组
-    数组元素的添加与删除
-"""
-a = np.arange(8).reshape(2, 2, 2)
 
-print('原数组：')
-print(a)
-print('获取数组中一个值：')
-print(np.where(a == 6))
-print(a[1, 1, 0])  # 为 6
-print('\n')
