@@ -91,8 +91,8 @@ fig.set_size_inches(10, 6)
 x = np.arange(len(binrange) - 1) * 3
 w = 0.3
 # 绘制多个bar在同一个图中, 这里需要控制width
-plt.bar(x - w, hist1, width=2 * w, align='center')
-plt.bar(x + w, hist2, width=2 * w, align='center')
+plt.bar(x - w, hist1, width=2 * w)
+plt.bar(x + w, hist2, width=2 * w)
 # 设置坐标轴的标签
 ax1.yaxis.set_tick_params(labelsize=15)  # 设置y轴的字体的大小
 ax1.set_xticks(x)  # 设置xticks出现的位置

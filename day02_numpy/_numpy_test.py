@@ -115,4 +115,3 @@ for x in np.nditer(a, order='C', op_flags=['readwrite']):
     x[...] = 2 * x
     print(x, end=",")
 print('___________*****_________________')
-
