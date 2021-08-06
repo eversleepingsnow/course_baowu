@@ -16,7 +16,8 @@ df = pd.DataFrame({
 })
 print(df)
 # 遍历列名
-for col in df: print(col)
+for col in df:
+    print(col)
 print('---------------------')
 # iteritems()
 for key, value in df.iteritems():
@@ -25,5 +26,7 @@ print('---------------------')
 # iterrows()返回迭代器，产生每个索引值以及包含每行数据的序列
 for row_index, value in df.iterrows():
     print(row_index, value)
+print('---------------------')
 for row in df.itertuples():
     print(row)
+print('---------------------')
